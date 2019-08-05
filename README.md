@@ -9,8 +9,10 @@ Ejemplo:
 ==============
 
 En este ejemplo se utilizan las fórmulas f(x) y g(x).
+'''
 __f(x) = x*((4*(x**2) + 1)**0.5 + 2*x)__
 __g(X) = x/((4*(x**2) + 1)**0.5 - 2*x)__
+'''
 Dichas fórmulas son equivalentes, como se explica en el video, sin embargo no entregan los mismos resultados debidos a que el computador no puede soportar caracteres tan grandes.
 En otras palabras, la función f pierde significancia a medida que esta tiende al infinito.
 
@@ -28,6 +30,7 @@ Abajo se muestra como va creciendo el error relativo en la medida en que se cons
 
 Output de la consola:
 f(x):
+'''
 	value: -0.2360679775 relative error: 5.57280900008%
 	value: -0.249843945008 relative error: 0.06242199685%
 	value: -0.249998437519 relative error: 0.000624992344456%
@@ -39,7 +42,9 @@ f(x):
 	value: -0.0 relative error: 100.0%
 	value: -0.0 relative error: 100.0%
 	value: -0.0 relative error: 100.0%
+'''
 g(x):
+'''
 	value: -0.2360679775 relative error: 5.57280900008%
 	value: -0.249843945008 relative error: 0.0624219968571%
 	value: -0.24999843752 relative error: 0.000624992187614%
@@ -51,7 +56,7 @@ g(x):
 	value: -0.25 relative error: 0.0%
 	value: -0.25 relative error: 0.0%
 	value: -0.25 relative error: 0.0%
-
+'''
 
 Recursos
 ==============
