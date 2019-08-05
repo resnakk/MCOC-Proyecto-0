@@ -24,9 +24,9 @@ Se define el error relativo como
 
 	ERROR = (Promedio_Calculado - Resultado_Exacto) / Resultado_Exacto
 
-Abajo se muestra como va creciendo el error relativo en la medida en que se consideran cada vez mas números. Esto ocurre debido a la perdida de significancia en la operacion suma usada internamente por el algoritmo de `sp.mean`. 
-
-![Results](loss-of-significance.png)
+Abajo se muestra como en la función f el error relativo va disminuyendo hasta llegar al punto en que salta a un error relativo del 100%; esto se debe a que al llegar a -1*10⁹ el computador no soporta los caracteres retornando 0, demostrandose una perdia de significancia importantisima, puesto que tras este limite el computador simplemente retorna cero.
+Por el contrario, en la funcion g, se puede ver que el error va disminuyendo constantemente, lo que es muy bueno pero ocurre tambien en este caso que al ser el error relativo muy pequeño retorna cero de igual manera; por lo que termina perdiendo significancia en este caso. 
+![Results](fig.png)
 
 Output de la consola:
 f(x):
@@ -58,12 +58,3 @@ g(x):
 	value: -0.25 relative error: 0.0%
 ```
 
-Recursos
-==============
-
-+ Para escribir su `README.md` [https://help.github.com/articles/basic-writing-and-formatting-syntax]
-+ Articulo wiki sobre el tema: [https://en.wikipedia.org/wiki/Loss_of_significance]
-+ [https://en.wikiversity.org/wiki/Numerical_Analysis/Loss_of_Significance]
-+ [https://www.youtube.com/watch?v=0MSaJwjYtmU]
-+ [http://www.physics.utah.edu/~detar/lessons/c++/quadratic/node3.html]
-+ [http://www.math.pitt.edu/~trenchea/math1070/MATH1070_2_Error_and_Computer_Arithmetic.pdf]
