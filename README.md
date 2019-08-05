@@ -1,10 +1,11 @@
-# MCOC-Proyecto-0
+# MCOC-Proyecto-0 Mauricio Sánchez
 MCOC-Proyecto-0
 
 Introducción
 ==============
 
 Este ejemplo es el mostrado en el material extra del repositorio https://github.com/jaabell/MCOC-Proyecto-0.git, especificamente del video: https://www.youtube.com/watch?v=0MSaJwjYtmU. Material otorgado por el profesor.
+
 Ejemplo:
 ==============
 
@@ -26,6 +27,7 @@ Se define el error relativo como
 
 Abajo se muestra como en la función f el error relativo va disminuyendo hasta llegar al punto en que salta a un error relativo del 100%; esto se debe a que al llegar a -1*10⁹ el computador no soporta los caracteres retornando 0, demostrandose una perdia de significancia importantisima, puesto que tras este limite el computador simplemente retorna cero.
 Por el contrario, en la funcion g, se puede ver que el error va disminuyendo constantemente, lo que es muy bueno pero ocurre tambien en este caso que al ser el error relativo muy pequeño retorna cero de igual manera; por lo que termina perdiendo significancia en este caso. 
+
 ![Results](fig.png)
 
 Output de la consola:
